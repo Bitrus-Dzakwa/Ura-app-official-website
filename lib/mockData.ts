@@ -1,0 +1,123 @@
+import {
+  CirclePlus,
+  House,
+  MessageCircle,
+  Search,
+  UserRound,
+} from "lucide-react";
+
+export const MobileNavIcon = [
+  {
+    id: 1,
+    icon: House,
+    label: "Home",
+    href: "/",
+  },
+  {
+    id: 2,
+    icon: Search,
+    label: "Search",
+    href: "/search",
+  },
+  {
+    id: 3,
+    icon: CirclePlus,
+    label: "add",
+    href: "/add",
+  },
+  {
+    id: 4,
+    icon: MessageCircle,
+    label: "Comment",
+    href: "/comments",
+  },
+  {
+    id: 5,
+    icon: UserRound,
+    label: "Profile",
+    href: "/profile",
+  },
+];
+
+//TODO: TO BE DELETED WHEN BACKEND IS IMPLEMENTED
+export const ExploreMarketData = [
+  {
+    id: 1,
+    title: "Taste of Naija",
+    description: "Specializing in authentic Nigerian Cuisine.",
+    address: "2 Ode street, Garki, Abuja.",
+    image: "/product1.jpg",
+    hour: "Monday to Saturday: 9:00AM - 9:00PM",
+    email: "info@tasteofnaija.ng",
+    phone: "0800 000 000",
+    website: "tasteofnaija.ng",
+    category: "Food",
+    reviews: 4.5,
+    likes: 500,
+    dislikes: 200,
+  },
+  {
+    id: 2,
+    title: "Nigerian Fashion Week",
+    description:
+      "Nigerian Fashion Week is a popular event where fashion designers and stylists showcase their work.",
+    address: "30 Adeola street, Garki, Abuja.",
+    image: "/product2.jpg",
+    hour: "Monday to Saturday: 10:00AM - 10:00PM",
+    email: "info@nigerianfashionweek.ng",
+    phone: "0800 000 001",
+    website: "nigerianfashionweek.ng",
+    category: "Fashion",
+    reviews: 4.8,
+    likes: 600,
+    dislikes: 150,
+  },
+  {
+    id: 3,
+    title: "Nigerian Farmers Market",
+    description:
+      "The Nigerian Farmers Market is a popular event where Nigerians come together to buy fresh produce.",
+    address: "15 Ode street, Garki, Abuja.",
+    image: "/product3.jpg",
+    hour: "Monday to Saturday: 9:00AM - 11:00PM",
+    email: "info@nigerianfarmersmarket.ng",
+    phone: "0800 000 002",
+    website: "nigerianfarmersmarket.ng",
+    category: "Market",
+    reviews: 4.6,
+    likes: 450,
+    dislikes: 100,
+  },
+  {
+    id: 4,
+    title: "Nigerian Art Gallery",
+    description:
+      "The Art Gallery is a popular event where Nigerians come together to buy fresh produce.",
+    address: "20 Adeola street, Garki, Abuja.",
+    image: "/product4.jpg",
+    hour: "Monday to Saturday: 10:00AM - 11:00PM",
+    email: "info@nigerianartgallery.ng",
+    phone: "0800 000 003",
+    website: "nigerianartgallery.ng",
+    category: "Art",
+    reviews: 4.7,
+    likes: 550,
+    dislikes: 120,
+  },
+  {
+    id: 5,
+    title: "Nigerian Musical Festival",
+    description:
+      "The Nigerian Musical Festival is a popular event where Nigerians come together to buy fresh produce.",
+    address: "25 Adeola street, Garki, Abuja.",
+    image: "/product5.jpg",
+    hour: "Monday to Saturday: 9:00AM - 11:00PM",
+    email: "info@nigerianmusicalfestival.ng",
+    phone: "0800 000 004",
+    website: "nigerianmusicalfestival.ng",
+    category: "Music",
+    reviews: 4.9,
+    likes: 600,
+    dislikes: 80,
+  },
+];

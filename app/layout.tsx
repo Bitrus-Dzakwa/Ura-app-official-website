@@ -1,6 +1,20 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import { Exo, Raleway } from "next/font/google";
 import "./globals.css";
+
+// Define custom fonts using the localFont API from Next.js
+const exo = Exo({
+  weight: ["400", "700"],
+  subsets: ["latin"],
+  variable: "--font-exo", //css variables name
+});
+
+const raleway = Raleway({
+  weight: ["400", "500", "700"],
+  subsets: ["latin"],
+  variable: "--font-raleway",
+});
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -26,7 +40,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${exo.variable} ${raleway.variable} ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
       </body>
