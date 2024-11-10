@@ -6,7 +6,7 @@ interface Props {
 
 export default function layout({ children }: Props) {
   return (
-    <main className="relative min-h-dvh">
+    <main className="relative bg-slate-50 dark:bg-slate-900 min-h-dvh">
       {children}
       <MobileNav />
     </main>

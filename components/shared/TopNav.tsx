@@ -1,7 +1,7 @@
 "use client";
 
 import { cn } from "@/lib/utils";
-import { ChevronLeft, Menu } from "lucide-react";
+import { ChevronLeft, Filter, Menu, Search } from "lucide-react";
 import { usePathname } from "next/navigation";
 import { Button } from "../ui/button";
 import Link from "next/link";
@@ -12,6 +12,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "../ui/sheet";
+import { Separator } from "../ui/separator";
 
 interface Props {
   title?: string;
@@ -21,7 +22,33 @@ export default function TopNav({ title }: Props) {
   const pathname = usePathname();
 
   if (pathname === "/search") {
-    return <div>Search page</div>;
+    return (
+      <div className="flex flex-col bg-orange-500 p-5 text-white">
+        <h1 className="mb-5 font-bold font-primary text-2xl text-center">
+          Search for Business
+        </h1>
+        <p className="mb-3 font-light font-primary text-center text-sm">
+          What you are looking for is right at your finger tips
+        </p>
+        <div className="flex justify-between items-center gap-3">
+          <div className="flex justify-between items-center gap-3 bg-white p-3 rounded-xl w-full text-slate-900">
+            <input
+              type="text"
+              className="w-full"
+              placeholder="search here..."
+            />
+            <Separator
+              orientation="vertical"
+              className="bg-slate-800 h-6 text-slate-800"
+            />
+            <Search />
+          </div>
+          <div className="bg-white p-3 rounded-lg text-slate-900">
+            <Filter />
+          </div>
+        </div>
+      </div>
+    );
   }
 
   return (

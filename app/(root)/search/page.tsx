@@ -1,3 +1,39 @@
+import TopNav from "@/components/shared/TopNav";
+import { Button } from "@/components/ui/button";
+import { ArrowUpDown, Clock, LayoutGrid, X } from "lucide-react";
+
 export default function page() {
-  return <div>search</div>;
+  const isResult = false;
+  return (
+    <div className="min-h-dvh">
+      <TopNav />
+      {isResult ? (
+        <div className="flex flex-col gap-4 p-5">
+          <div className="flex justify-between items-center">
+            <h3 className="font-bold text-xl">Trending Searches</h3>
+            <Button className="">
+              <X />
+            </Button>
+          </div>
+          {/* Add your trending search data here */}
+          <div className="flex justify-start items-center gap-2 p-2 border-b-2">
+            <Clock className="text-slate-700" />
+            <span className="text-lg text-slate-700">
+              Last updated 15 minutes ago
+            </span>
+          </div>
+        </div>
+      ) : (
+        <div className="flex flex-col gap-4 p-5">
+          <div className="flex justify-between items-center p-2 border-b-2">
+            <h3 className="font-bold text-xl">Search results</h3>
+            <div className="flex gap-5">
+              <ArrowUpDown />
+              <LayoutGrid />
+            </div>
+          </div>
+        </div>
+      )}
+    </div>
+  );
 }
