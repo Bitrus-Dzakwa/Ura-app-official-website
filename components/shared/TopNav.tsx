@@ -2,7 +2,7 @@
 
 import { cn } from "@/lib/utils";
 import { ChevronLeft, Filter, Menu, Search } from "lucide-react";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { Button } from "../ui/button";
 import Link from "next/link";
 import {
@@ -19,11 +19,12 @@ interface Props {
 }
 
 export default function TopNav({ title }: Props) {
+  const router = useRouter();
   const pathname = usePathname();
 
   if (pathname === "/search") {
     return (
-      <div className="flex flex-col bg-orange-500 p-5 text-white">
+      <div className="top-0 sticky flex flex-col bg-orange-500 p-5 text-white">
         <h1 className="mb-5 font-bold font-primary text-2xl text-center">
           Search for Business
         </h1>
@@ -53,7 +54,11 @@ export default function TopNav({ title }: Props) {
 
   return (
     <nav className="top-0 sticky flex justify-between items-center bg-orange-500 p-5 text-white">
-      <ChevronLeft size={28} className="text-white" />
+      <ChevronLeft
+        size={28}
+        className="text-white"
+        onClick={() => router.back()}
+      />
       <h1 className="font-display text-xl capitalize">{title}</h1>
       <div className="flex md:hidden">
         <Sheet>

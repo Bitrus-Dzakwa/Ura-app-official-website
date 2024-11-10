@@ -52,9 +52,11 @@ export const ExploreMarketData = [
     phone: "0800 000 000",
     website: "tasteofnaija.ng",
     category: "Food",
-    reviews: 4.5,
+    reviews: 4,
     likes: 500,
     dislikes: 200,
+    price: 100,
+    availability: true,
   },
   {
     id: 2,
@@ -71,6 +73,8 @@ export const ExploreMarketData = [
     reviews: 4.8,
     likes: 600,
     dislikes: 150,
+    price: 7800,
+    availability: true,
   },
   {
     id: 3,
@@ -87,6 +91,8 @@ export const ExploreMarketData = [
     reviews: 4.6,
     likes: 450,
     dislikes: 100,
+    price: 5000,
+    availability: true,
   },
   {
     id: 4,
@@ -103,6 +109,8 @@ export const ExploreMarketData = [
     reviews: 4.7,
     likes: 550,
     dislikes: 120,
+    price: 3500,
+    availability: true,
   },
   {
     id: 5,
@@ -119,5 +127,7 @@ export const ExploreMarketData = [
     reviews: 4.9,
     likes: 600,
     dislikes: 80,
+    price: 4000,
+    availability: false,
   },
 ];

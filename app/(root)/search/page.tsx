@@ -1,5 +1,7 @@
+import SearchCard from "@/components/SearchCard";
 import TopNav from "@/components/shared/TopNav";
 import { Button } from "@/components/ui/button";
+import { ExploreMarketData } from "@/lib/mockData";
 import { ArrowUpDown, Clock, LayoutGrid, X } from "lucide-react";
 
 export default function page() {
@@ -31,6 +33,11 @@ export default function page() {
               <ArrowUpDown />
               <LayoutGrid />
             </div>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-3">
+            {ExploreMarketData.map((search) => (
+              <SearchCard key={search.id} search={search} />
+            ))}
           </div>
         </div>
       )}
