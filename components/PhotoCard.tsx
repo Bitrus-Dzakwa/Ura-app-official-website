@@ -3,15 +3,13 @@
 import Image from "next/image";
 
 interface Props {
-  data: {
-    id: number;
-    src: string;
-    title: string;
-    price: number;
-  };
+  id: number;
+  src: string;
+  title: string;
+  price: number;
 }
 
-export default function PhotoCard({ data: { src, title, price } }: Props) {
+export default function PhotoCard({ src, title, price }: Props) {
   return (
     <div className="w-full flex-col flex bg-white border">
       <Image

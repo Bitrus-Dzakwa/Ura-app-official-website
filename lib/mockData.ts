@@ -228,3 +228,179 @@ export const ReviewsData = [
     image: "/assets/Ellipse 21.svg",
   },
 ];
+
+export const bookMarkData = [
+  {
+    id: 1,
+    title: "Bella Boutique",
+    content: "your go-to store for female wears",
+    img: "/assets/bookMark19.svg",
+  },
+  {
+    id: 2,
+    title: "Piim fashion",
+    content: "the world's most expensive brand",
+    img: "/assets/bookMark18.svg",
+  },
+  {
+    id: 3,
+    title: "Patagonia",
+    content: "the world's best footwear brand",
+    img: "/assets/bookMark17.svg",
+  },
+  {
+    id: 4,
+    title: "Zara",
+    content: "the world's most popular women's fashion brand",
+    img: "/assets/bookMark16.svg",
+  },
+];
+
+export const messageData = [
+  {
+    id: 1,
+    message: "Hello, this is the first message.",
+    sender: "John Joe",
+    img: "/assets/msg16.svg",
+  },
+  {
+    id: 2,
+    message: "This is the second message.",
+    sender: "Jane Doe",
+    img: "/assets/msg17.svg",
+  },
+  {
+    id: 3,
+    message: "Hello, this is the third message.",
+    sender: "John Joe",
+    img: "/assets/msg18.svg",
+  },
+];
+
+export const photoDatas = [
+  {
+    id: 1,
+    src: "/assets/Rectangle 265.svg",
+    title: "Purple throw Pillow",
+    price: 5000,
+  },
+  {
+    id: 2,
+    src: "/assets/Rectangle 264.svg",
+    title: "Creamy red throw Pillow",
+    price: 4500,
+  },
+  {
+    id: 3,
+    src: "/assets/Rectangle 263.svg",
+    title: "Dark blue throw Pillow",
+    price: 4000,
+  },
+  {
+    id: 4,
+    src: "/assets/Rectangle 262.svg",
+    title: "Light blue throw Pillow",
+    price: 3500,
+  },
+  {
+    id: 5,
+    src: "/assets/Rectangle 261.svg",
+    title: "Light gray throw Pillow",
+    price: 3000,
+  },
+];
+
+export const productInHomePage = [
+  {
+    id: 1,
+    businessName: "Bella boutique",
+    businessDescription:
+      "Bella focusing the project with the following business description",
+    businessImage: "/assets/bookMark17.svg",
+    createdAt: "2022-01-01T00:00:00.000Z",
+    products: [
+      {
+        id: 1,
+        name: "Supag Bathing Suit",
+        price: 15000,
+        image: "/assets/Rectangle 266.svg",
+        description: "A super cute and stylish bathing suit for women.",
+        availability: true,
+        category: "Fashion",
+      },
+      {
+        id: 2,
+        name: "Supag Dress",
+        price: 12000,
+        image: "/assets/Rectangle 267.svg",
+        description: "A super cute and stylish dress for women.",
+        availability: true,
+        category: "Fashion",
+      },
+      {
+        id: 3,
+        name: "Supag Shoes",
+        price: 10000,
+        image: "/assets/Rectangle 268.svg",
+        description: "A super cute and stylish shoes for women.",
+        availability: true,
+        category: "Fashion",
+      },
+      {
+        id: 4,
+        name: "Supag Jacket",
+        price: 8000,
+        image: "/assets/Rectangle 269.svg",
+        description: "A super cute and stylish jacket for women.",
+        availability: true,
+        category: "Fashion",
+      },
+    ],
+  },
+  {
+    id: 2,
+    businessName: "Piim fashion",
+    businessDescription:
+      "Piim focusing the project with the following business description",
+    businessImage: "/assets/bookMark18.svg",
+    createdAt: "2022-02-01T00:00:00.000Z",
+    products: [
+      {
+        id: 1,
+        name: "Piim Bathing Suit",
+        price: 15000,
+        image: "/assets/Rectangle 261.svg",
+        description: "A stylish and cute bathing suit for women.",
+        availability: true,
+        category: "Fashion",
+      },
+      {
+        id: 2,
+        name: "Piim Dress",
+        price: 12000,
+        image: "/assets/Rectangle 262.svg",
+        description: "A stylish and cute dress for women.",
+        availability: true,
+        category: "Fashion",
+      },
+      {
+        id: 3,
+        name: "Piim Shoes",
+        price: 10000,
+        image: "/assets/Rectangle 263.svg",
+        description: "A stylish and cute shoes for women.",
+        availability: true,
+        category: "Fashion",
+      },
+      {
+        id: 4,
+        name: "Piim Jacket",
+        price: 8000,
+        image: "/assets/Rectangle 264.svg",
+        description: "A stylish and cute jacket for women.",
+        availability: true,
+        category: "Fashion",
+      },
+    ],
+  },
+];

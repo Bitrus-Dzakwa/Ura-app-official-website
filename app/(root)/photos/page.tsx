@@ -1,39 +1,7 @@
 import PhotoCard from "@/components/PhotoCard";
 import TopNav from "@/components/shared/TopNav";
+import { photoDatas } from "@/lib/mockData";
 import Image from "next/image";
-
-export const photoDatas = [
-  {
-    id: 1,
-    src: "/assets/Rectangle 265.svg",
-    title: "Purple throw Pillow",
-    price: 5000,
-  },
-  {
-    id: 2,
-    src: "/assets/Rectangle 264.svg",
-    title: "Creamy red throw Pillow",
-    price: 4500,
-  },
-  {
-    id: 3,
-    src: "/assets/Rectangle 263.svg",
-    title: "Dark blue throw Pillow",
-    price: 4000,
-  },
-  {
-    id: 4,
-    src: "/assets/Rectangle 262.svg",
-    title: "Light blue throw Pillow",
-    price: 3500,
-  },
-  {
-    id: 5,
-    src: "/assets/Rectangle 261.svg",
-    title: "Light gray throw Pillow",
-    price: 3000,
-  },
-];
 
 export default function page() {
   return (
@@ -54,7 +22,13 @@ export default function page() {
         </div>
         <div className="grid grid-cols-2 gap-3">
           {photoDatas.map((data) => (
-            <PhotoCard key={data.id} data={data} />
+            <PhotoCard
+              key={data.id}
+              id={data.id}
+              price={data.price}
+              src={data.src}
+              title={data.title}
+            />
           ))}
         </div>
       </div>
