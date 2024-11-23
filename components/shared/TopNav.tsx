@@ -1,7 +1,13 @@
 "use client";
 
 import { cn } from "@/lib/utils";
-import { ChevronLeft, Filter, Menu, Search } from "lucide-react";
+import {
+  ChevronLeft,
+  EllipsisVertical,
+  Filter,
+  Menu,
+  Search,
+} from "lucide-react";
 import { usePathname, useRouter } from "next/navigation";
 import { Button } from "../ui/button";
 import Link from "next/link";
@@ -47,6 +53,27 @@ export default function TopNav({ title }: Props) {
           <div className="bg-white p-3 rounded-lg text-slate-900">
             <Filter />
           </div>
+        </div>
+      </div>
+    );
+  }
+  if (pathname === "/message") {
+    return (
+      <div className="top-0 sticky flex flex-col bg-orange-500 p-5 text-white">
+        <div className="flex justify-between items-center gap-16">
+          <div className="flex justify-between items-center gap-3 bg-white p-3 rounded-xl w-full text-slate-900">
+            <input
+              type="text"
+              className="w-full"
+              placeholder="search messages"
+            />
+            <Separator
+              orientation="vertical"
+              className="bg-slate-800 h-6 text-slate-800"
+            />
+            <Search />
+          </div>
+          <EllipsisVertical />
         </div>
       </div>
     );
