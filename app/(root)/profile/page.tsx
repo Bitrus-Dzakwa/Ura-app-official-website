@@ -2,6 +2,7 @@ import TopNav from "@/components/shared/TopNav";
 import { profileData } from "@/lib/mockData";
 import { Bookmark, Ellipsis, Forward, MessageSquare, Star } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function page() {
   return (
@@ -46,13 +47,17 @@ export default function page() {
       </div>
       <div className="gap-4 grid grid-cols-2">
         {profileData.products.map((product, index) => (
-          <div key={index} className="flex flex-col gap-2">
+          <Link
+            key={index}
+            className="flex flex-col gap-2"
+            href={`/products/${product.id}`}
+          >
             <h3 className="font-semibold text-xl capitalize">
               {product.title}
             </h3>
             <p>{product.description}</p>
             <p>NGN {product.price}</p>
-          </div>
+          </Link>
         ))}
       </div>
     </main>

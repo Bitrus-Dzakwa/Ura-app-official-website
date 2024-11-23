@@ -200,3 +200,31 @@ export const profileData = {
     },
   ],
 };
+
+export const ReviewsData = [
+  {
+    id: 1,
+    user: "John Doe",
+    rating: 4,
+    content: "This product is amazing!",
+    date: "2022-01-01",
+    image: "/assets/Ellipse 22.svg",
+  },
+  {
+    id: 2,
+    user: "Jane Smith",
+    rating: 5,
+    content: "I love this product!",
+    date: "2022-02-01",
+    image: "/assets/Ellipse 23.svg",
+  },
+  {
+    id: 3,
+    user: "Jane Doe",
+    rating: 3,
+    content:
+      "Elegance by Eniola has a good customer care service. They answered me speedily and made sure I was satisfied with their delivery. Lorem ispum de amet cot. ",
+    date: "2022-03-01",
+    image: "/assets/Ellipse 21.svg",
+  },
+];
