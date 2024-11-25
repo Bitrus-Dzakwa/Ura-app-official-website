@@ -1,5 +1,5 @@
 import React from "react";
-import { messageData } from "../page";
+import { messageData } from "@/lib/mockData";
 import TopNav from "@/components/shared/TopNav";
 import Image from "next/image";
 
